@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderRightImage from "../../images/Top-Right-Header-Image.png";
+import HeaderRightImage from "../images/Top-Right-Header-Image.png";
 
 function PageTitle() {
   return <div className="page-title">Home</div>;

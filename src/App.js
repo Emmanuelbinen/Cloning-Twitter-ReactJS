@@ -1,6 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { Timeline } from "./component/mainComponents/Timeline";
+import Timeline from "./component/Timeline.js";
 
 function App() {
   return <Timeline />;
