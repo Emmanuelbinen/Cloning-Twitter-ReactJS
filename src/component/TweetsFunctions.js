@@ -5,7 +5,7 @@ import ReactIcon from "../images/React.png";
 import Share from "../images/Share.png";
 import Verified from "../images/Verified.png";
 import TweetProfilePhoto from "../images/CNN-Profile-Photo.png";
-// Tweet components
+
 function TweetAvatar(props) {
   return <img src={props.image || TweetProfilePhoto} alt="Profile Photo" />;
 }
@@ -22,10 +22,10 @@ function TweetAction(props) {
 function TweetActions(props) {
   return (
     <div className="tweet-actions">
-      <TweetAction icon={Reply} value={props.value?.reply} />
-      <TweetAction icon={Retweet} value={props.value?.retweet} />
-      <TweetAction icon={ReactIcon} value={props.value?.react} />
-      <TweetAction icon={Share} value={props.value?.share} />
+      <TweetAction icon={Reply} value={props.value && props.value.reply} />
+      <TweetAction icon={Retweet} value={props.value && props.value.retweet} />
+      <TweetAction icon={ReactIcon} value={props.value && props.value.react} />
+      <TweetAction icon={Share} value={props.value && props.value.share} />
     </div>
   );
 }
