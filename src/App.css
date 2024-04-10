@@ -14,6 +14,21 @@ body{
     justify-content: space-between;
 }
 
+#container {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  
+  #nav-box {
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
 .timeline {
     flex: 0 0 800px;
     font-family: 'Inter', sans-serif;
